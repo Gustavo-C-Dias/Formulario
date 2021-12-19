@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Itens</title>
+    <link href="../assets/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <form id="form_cadastro">
+            <h1>Cadastro de itens</h1>
+            <p>Registre os novos itens que acabaram de chegar !</p>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="quantidade">Quantidade</label>
+                <input type="number" name="quantidade" id="quantidade">
+            </div>
+            <div>
+                <label for="input_setor">Setor</label>
+                <input type="list" name="input_setor" id="input_setor" list="Setor">
+            </div>
+
+            <datalist id="Setor">
+                <option>Alimentos</option>
+                <option>Eletrônicos</option>
+                <optio>Brinquedos</option>
+                <option>Decoração</option>
+                <option>Móveis</option>
+            </datalist>
+
+            <button>Cadastrar</button>
+        </form>
+    </main>
+
+    <script src="../js/cadastro.js"></script>
+</body>
+</html>
